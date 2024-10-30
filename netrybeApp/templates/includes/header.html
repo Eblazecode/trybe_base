@@ -1,0 +1,138 @@
+{% load static %}
+
+<!-- Header Top ==== -->
+<header class="header rs-nav">
+    <!--<div class="top-bar">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="topbar-left">
+                    <ul>
+                        <li><a href="faq-1.html"><i class="fa fa-question-circle"></i>Ask a Question</a></li>
+                        <li><a href="javascript:;"><i class="fa fa-envelope-o"></i>Support@website.com</a></li>
+                    </ul>
+                </div>
+                <div class="topbar-right">
+                    <ul>
+                        <li>
+                            <select class="header-lang-bx">
+                                <option data-icon="flag flag-uk">English UK</option>
+                                <option data-icon="flag flag-us">English US</option>
+                            </select>
+                        </li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <div class="sticky-header navbar-expand-lg">
+        <div class="menu-bar clearfix">
+            <div class="container clearfix">
+                <!-- Header Logo ==== -->
+                <div class="menu-logo">
+                    <a href="{% url 'index' %}"><img src="{% static 'assets/3x/Artboard 2 copynetrybelogo.png' %}"  alt=""></a>
+                </div>
+                <!-- Mobile Nav Button ==== -->
+                <button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" 
+                data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <!-- Author Na-->
+                <div class="secondary-menu">
+                    <div class="secondary-inner">
+                        <ul>
+                            <li><a href="https://web.facebook.com/netrybe" class="btn-link"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="javascript:;" class="btn-link"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/netrybe-technology" class="btn-link"><i class="fa fa-linkedin"></i></a></li>
+                        
+                        </ul>
+                    </div>
+                </div>
+                
+                <!--<div class="nav-search-bar">
+                    <form action="#">
+                        <input name="search" value="" type="text" class="form-control" placeholder="Type to search">
+                        <span><i class="ti-search"></i></span>
+                    </form>
+                    <span id="search-remove"><i class="ti-close"></i></span>
+                </div> Navigation Menu -->
+                <div class="menu-links navbar-collapse collapse justify-content-start" id="menuDropdown">
+                    <div class="menu-logo">
+                        <a href="{% url 'index' %}"><img src="{% static 'assets/3x/Artboard 2 copynetrybelogo.png' %}"  alt=""></a>
+                    </div>
+                    <ul class="nav navbar-nav">	
+                        <li class="active"><a href="{% url 'index' %}">Home </i></a>
+                           
+                        </li>
+                        <li class="active"><a href="{% url 'about' %}">About </i></a>
+                           
+                        </li>
+                        <li><a href="javascript:;">services<i class="fa fa-chevron-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="{% url 'softwaredev' %}">software development</a>
+                
+                                </li>
+                                <li><a href="javascript:;">web design/ Dev</a>
+                            
+                                </li>
+                                <li><a href="{% url 'courses' %}">Talent training</a> </li>
+                                <li><a href="{% url 'enterprise' %}">Enterprise solution</a>
+                                </li>
+                                <li><a href="{% url 'business' %}">Business intelligence</a></li>
+                                <li><a href="#"> AI data science research</a></li>
+                                <li><a href="{% url 'nimblyprog' %}">Schools program</a></li>
+                              
+                            </ul>
+                        </li>
+                        <li><a href="{% url 'hustle' %}"> SMEs </a></li>
+                        <li class="add-mega-menu"><a href="#">Courses <i class="fa fa-chevron-down"></i></a>
+                            <ul class="sub-menu add-menu">
+                                <li class="add-menu-left">
+                                    <h5 class="menu-adv-title">our course</h5>
+                                    <ul>
+                                        <li><a href="{% url 'datasci' %}">Data analysis </a></li>
+                                        <li><a href="{% url 'frontend' %}">frontend developemt</a></li>
+                                        <li><a href="{% url 'backend' %}"> Backend development</a></li>
+                                        <li><a href="{% url 'productdesign' %}">product design UIUX </a></li>
+                                        <li><a href="#">fullstack development</a></li>
+                                        <li><a href="#">cyber security</a></li>
+                                        <li><a href="#">ICT essentials</a></li>
+                                        <li><a href="#">project management</a></li>
+                                        <li><a href="#">programming:PYTHON, JAVA C++ etc</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="add-menu-right">
+                                    <img src="assets/images/adv/adv.jpg" alt=""/>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">sch prog <i class="fa fa-chevron-down"></i></a>
+                          <ul class="sub-menu">
+                                <li><a href="{% url 'nimblyprog' %}">Nimbly coding</a></li>
+                                <li><a href="{% url 'aftersch' %}">After school program</a></li>
+                                <li><a href="{% url 'workshop' %}">Tech teachers</li></a></li>
+                                <li><a href="#">Holiday tech club</a></li>
+                                <li><a href="#">school management system</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a -- href="{% url 'contact' %}">contact </a></li>
+                       
+                    </ul>
+                   
+                    <div class="nav-social-link">
+                        <li><a href="https://web.facebook.com/netrybe" class="btn-link"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="javascript:;" class="btn-link"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/netrybe-technology" class="btn-link"><i class="fa fa-linkedin"></i></a></li>
+                    </div>
+                </div>
+                <!-- Navigation Menu END ==== -->
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header Top END ==== -->
