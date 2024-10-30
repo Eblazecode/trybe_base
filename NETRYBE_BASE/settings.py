@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-)gspu1!@q-qu_)ucc_gp^_gcj42=2dt)#u=sldun##7srq^#*_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["https://trybebase-rjdxesakg-enochsturdgmailcoms-projects.vercel.app", "localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ["https://trybe-base.vercel.app", "localhost", "127.0.0.1"]
 
 
 # Application definition
